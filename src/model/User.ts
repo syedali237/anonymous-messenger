@@ -65,6 +65,8 @@ const UserSchema: Schema<User> = new Schema({
     default: true,
   },
   messages: [MessageSchema],
+},{
+  collection : 'users'
 });
 
 const UserModel =
