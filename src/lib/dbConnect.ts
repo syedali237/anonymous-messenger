@@ -4,7 +4,9 @@ type ConnectionObject = {
     isConnected?: number
 }
 
-const connection: ConnectionObject = {}
+const connection: ConnectionObject = {
+  isConnected: 0
+}
 
 async function dbConnect() : Promise<void> {
   if (connection.isConnected) {
